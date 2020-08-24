@@ -1,0 +1,43 @@
+@font-face{
+    src: url('../assets/fonts/Montserrat-SemiBold.ttf');
+    font-family: "Mont-SemiBold" ;
+}
+
+@font-face{
+    src: url('../assets/fonts/Montserrat-Medium.ttf');
+    font-family: "Mont-Medium" ;
+}
+
+@font-face{
+    src: url('../assets/fonts/Montserrat-Regular.ttf');
+    font-family: "Mont-Regular" ;
+}
+
+
+
+// Variables 
+
+// Name Font 
+$FontSemi: "Mont-SemiBold" , sans-serif ;
+$FontReg : "Mont-Regular" , sans-serif;
+$FontMedium : "Mont-Medium"  , sans-serif ;
+
+
+// size Font 
+$size1 : 48.83px ;
+$size2 : 39.06px ;
+$size3 : 20.00px ; 
+$size4 : 16px ;
+$size5 : 12.80px ;
+
+
+// Color 
+$danger : #BC495C ;
+$mainColor : #4A415D ;
+$grey : #808080 ;
+$FontColor : #1d1d1d ; 
+
+
+
+
+

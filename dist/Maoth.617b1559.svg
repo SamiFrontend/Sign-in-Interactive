@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="252" height="100.46" viewBox="0 0 252 100.46">
+  <defs>
+    <clipPath id="clip-Maoth">
+      <rect width="252" height="100.46"/>
+    </clipPath>
+  </defs>
+  <g id="Maoth" clip-path="url(#clip-Maoth)">
+    <path id="Path_3" data-name="Path 3" d="M678,540.507s-44.1,78.39-112.328,74.307c-31.336-1.875-67.919-21.359-107.639-74.307" transform="translate(-441 -529.969)" fill="none" stroke="#161616" stroke-linecap="round" stroke-width="15"/>
+  </g>
+</svg>

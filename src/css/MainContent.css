@@ -1,0 +1,15 @@
+@font-face {
+  src: url("../assets/fonts/Montserrat-SemiBold.ttf");
+  font-family: "Mont-SemiBold";
+}
+
+@font-face {
+  src: url("../assets/fonts/Montserrat-Medium.ttf");
+  font-family: "Mont-Medium";
+}
+
+@font-face {
+  src: url("../assets/fonts/Montserrat-Regular.ttf");
+  font-family: "Mont-Regular";
+}
+/*# sourceMappingURL=MainContent.css.map */

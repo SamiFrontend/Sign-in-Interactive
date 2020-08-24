@@ -1,0 +1,356 @@
+@import "./MainContent.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $FontReg;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 10px;
+}
+
+.container-box {
+  display: grid;
+  height: 100%;
+  place-content: center;
+}
+
+.box-sign {
+  display: flex;
+  width: 1350px;
+  min-height: 700px;
+  // max-width: 1200px ;
+  position: relative;
+  color: white;
+  & > * {
+    flex-basis: 50%;
+  }
+
+  .content-style {
+    box-shadow: 0 6px 60px rgba($color: #000000, $alpha: 0.144);
+    padding: 8em;
+  }
+
+  .content-face {
+    background-color: $mainColor;
+    color: white;
+    border-radius: 15px 0px 0px 15px;
+    z-index: 100;
+  }
+
+  .content-form {
+    border-radius: 0 15px 15px 0;
+    color: $FontColor;
+    .para-form {
+      margin: 0.5em 0;
+    }
+
+    .input-style {
+      & > * {
+        display: block;
+      }
+
+      .label-style {
+        font-family: $FontMedium;
+        margin-top: 3.2em;
+        margin-bottom: 5px;
+      }
+
+      .inp_style {
+        font-size: $size4;
+        padding: 1.1em;
+        width: 100%;
+        border-radius: 40px;
+        outline: none;
+        border: 1px solid $grey;
+      }
+
+      [type="password"] {
+        font: caption;
+      }
+
+      #show-password {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        .active {
+          position: relative;
+          svg {
+            fill: $mainColor !important;
+          }
+
+          &::before {
+            position: absolute;
+            content: "";
+            background-color: $mainColor;
+            height: 0;
+            width: 2px;
+            right: 20px;
+            bottom: 15px;
+            transform: rotate(-30deg);
+            border-radius: 40px;
+            animation: heighter 0.2s forwards;
+            transform-origin: bottom;
+          }
+        }
+        .icon {
+          position: absolute;
+          right: 0.3%;
+          top: 52%;
+          display: inline-block;
+          transform: translateY(-50%);
+          width: 23px;
+          background: white;
+          border-radius: 0 40px 40px 0;
+          cursor: pointer;
+          padding: 10px 12px;
+          padding-right: 15px;
+          box-sizing: content-box;
+          svg {
+            fill: rgb(124, 124, 124);
+            width: 100%;
+            cursor: pointer;
+            transition: fill 0.2s ease;
+
+            &:hover {
+              fill: $mainColor;
+            }
+          }
+        }
+      }
+
+      .label-style:last-of-type {
+        margin-top: 3.3rem;
+      }
+
+      .checkbox {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        font-size: $size5;
+        [type="checkbox"] {
+          margin: 0 10px;
+        }
+      }
+    }
+
+    .btns-content {
+      width: 100%;
+      margin-top: 5em;
+      display: block;
+      .btn {
+        cursor: pointer;
+        transition: all 0.2s;
+        border: none;
+        background-color: transparent;
+        font-size: $size4;
+        outline: none;
+        display: block;
+        margin: 0.2em 0;
+        width: 100%;
+        padding: 1.2em;
+        border-radius: 4em;
+        font-family: $FontMedium;
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+
+      .btn-primary {
+        background-color: $mainColor !important ;
+        color: white;
+        &:active {
+          background: #373146 !important ;
+        }
+      }
+
+      .btn-second {
+        margin-top: 10px;
+        border: 1px solid rgb(216, 216, 216);
+        color: $danger;
+        &:hover {
+          background-color: $danger;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.content-face {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .face {
+    min-width: 320px !important;
+    min-height: calc(450px - 3rem);
+    margin-top: 3rem;
+    .eyes {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      & > * {
+        width: 160px;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 85%;
+          align-self: center;
+        //   animation: moveUp .3s infinite ease;
+ 
+        }
+
+        .eye{
+          position: relative;
+          width: 159px;
+          height: 159px;
+          border-radius: 50%;
+          background-color: white;
+          border: 8px solid #1d1d1d;
+          border-style: outset;
+          &::after{
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 50%;
+            top: 50%;
+            left: 39px;
+            transform: translate(-50% , -50% );
+          }
+        }
+
+        .dontLook{
+          &::after{
+            transition: transform .4s ;
+            transform: translate(99% , -16% );
+          }
+        }
+      }
+    }
+    .mouth {
+      display: flex;
+      justify-content: center;
+      margin-top: 5rem ;
+    }
+  }
+}
+
+.gretting {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  visibility: hidden;
+  & > * {
+    text-align: center;
+  }
+
+  .green {
+    font-size: $size5;
+    font-family: $FontMedium;
+    display: block;
+    margin-bottom: 1em;
+    color: rgb(11, 184, 11);
+  }
+
+  .para-greeting {
+    margin-top: 2em;
+    line-height: 1.8em;
+  }
+}
+
+.btn-primary {
+  background-color: $mainColor !important ;
+  color: white;
+}
+
+
+.footer-content{
+    text-align: center ;
+    .msg-user{
+        margin-top: -1rem ;
+        margin-bottom: 1rem ;
+    }
+}
+
+
+
+// GLOBAL CLASSES
+.size-1 {
+  font-family: $FontSemi;
+  span {
+    font-family: inherit;
+  }
+}
+
+// length all size in classes
+$sizes: 1 $size1, 2 $size2, 3 $size3, 4 $size4, 5 $size5;
+
+@each $number, $current in $sizes {
+  .size-#{$number} {
+    font-size: $current;
+  }
+}
+
+.color-1 {
+  color: $FontColor;
+}
+
+.color-grey {
+  color: $grey;
+}
+
+// para
+.para {
+  font-size: $size4;
+}
+
+@keyframes heighter {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 25px;
+  }
+}
+
+
+
+// Classes used inside script 
+
+.valid-input{
+    position: relative;
+    .label-style{
+        color: $danger !important;
+    }
+
+    input{
+        border-color: $danger !important;
+        color: $danger ;
+    }
+    .error-msg{
+        position: absolute;
+        right: 1rem ;
+        text-align: left;
+        bottom: -2.5rem;
+        color: $danger;
+        font-family: $FontMedium;
+    }
+
+}
+
+
+.input-style:nth-child(3) .error-msg{
+  bottom: .8rem !important;
+}

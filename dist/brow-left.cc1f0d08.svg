@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="50" viewBox="0 0 120 50">
+  <defs>
+    <clipPath id="clip-brow-left">
+      <rect width="120" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="brow-left" clip-path="url(#clip-brow-left)">
+    <path id="Path_10" data-name="Path 10" d="M432,250.786s90.471-3.483,106.145,33.09" transform="translate(-426 -239)" fill="none" stroke="#000" stroke-width="15"/>
+  </g>
+</svg>
