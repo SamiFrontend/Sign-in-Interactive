@@ -1,7 +1,7 @@
 import * as Moduling from './MethodsMain';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { WSAETIMEDOUT } from 'constants';
+
 // configration about scroll Trigger 
 gsap.registerPlugin(ScrollTrigger);
 
